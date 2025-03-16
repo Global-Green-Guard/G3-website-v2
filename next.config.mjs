@@ -7,6 +7,7 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "standalone", // Add this directly to config
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -44,5 +45,6 @@ function mergeConfig(nextConfig, userConfig) {
     }
   }
 }
+
 
 export default nextConfig
