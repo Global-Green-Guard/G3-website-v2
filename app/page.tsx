@@ -88,7 +88,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-primary/80"></div>
+                <div className="absolute inset-0 bg-primary/20"></div>
               </div>
               <div className="relative z-10">
                 <div className="flex items-center justify-center mb-8">
