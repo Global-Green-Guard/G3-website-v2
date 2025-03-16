@@ -72,7 +72,7 @@ export default function Home() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-8 left-8 max-w-md">
-                <Image src="/placeholder.svg?height=40&width=40" alt="Logo" width={40} height={40} className="mb-4" />
+                <Image src="/images/thirdman.jpg?height=40&width=40" alt="Logo" width={40} height={40} className="mb-4" />
                 <p className="text-white">
                   Global Green Guard is committed to supporting developers of high-quality carbon projects. We provide
                   not just funding but a collaborative partnership to amplify the positive environmental and social
@@ -80,20 +80,31 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="bg-primary rounded-xl p-12 flex flex-col justify-center">
-              <div className="flex items-center justify-center mb-8">
-                <div className="bg-white rounded-full p-4">
-                  <Leaf className="h-8 w-8 text-primary" />
-                </div>
+            <div className="relative rounded-xl p-12 flex flex-col justify-center overflow-hidden">
+              <div className="absolute inset-0 z-0">
+                <Image
+                  src="/images/wildfire.jpg"
+                  alt="Investment background"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-primary/80"></div>
               </div>
-              <h3 className="text-3xl font-bold text-black mb-4">Explore Investment Opportunities</h3>
-              <Button
-                variant="outline"
-                className="mt-4 self-start border-black text-black hover:bg-white/10 hover:text-black group"
-              >
-                <span>Learn More</span>
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <div className="relative z-10">
+                <div className="flex items-center justify-center mb-8">
+                  <div className="bg-white rounded-full p-4">
+                    <Leaf className="h-8 w-8 text-primary" />
+                  </div>
+                </div>
+                <h3 className="text-3xl font-bold text-black mb-4">Explore Investment Opportunities</h3>
+                <Button
+                  variant="outline"
+                  className="mt-4 self-start border-black text-white hover:bg-black/10 hover:text-black group"
+                >
+                  <span>Learn More</span>
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
